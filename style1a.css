@@ -1,0 +1,296 @@
+@font-face{
+	font-family:font1;
+	src:url(../Grafiki/LeagueGothic-Regular.otf);
+}
+body{
+	background-image:url(../Grafiki/Background.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-attachment: fixed;
+	color:white;
+}
+#p1,#p2{
+	display:none;
+}
+.buttonl{
+	position:relative;
+	left:45%;
+}
+.buttonr{
+	position:absolute;
+	right:45%;
+}
+
+nav li{
+	display: inline;
+	padding: 20px;
+	font-family: font1 ,Arial,sans-serif;
+	font-size: 40px;
+}
+nav{
+	text-align: center;
+	text-transform: uppercase;
+	padding:5px;
+	background-color:rgba(0,0,0,.4);
+}
+
+h2{
+	text-transform: uppercase;
+	font-family: font1 ,Arial,sans-serif;
+	font-size:30px;
+}
+
+a{
+	text-transform: uppercase;
+	color:white;
+	text-decoration: none;
+	
+}
+a:hover{
+	color:indianred;
+}
+h1{
+	font-family: font1 ,Arial,sans-serif;
+	font-size:25px;
+	text-align:center;
+}
+p{
+	font-family: Arial;
+	text-align: justify;
+}
+section, header{
+	width:960px;
+	margin:auto;
+}
+iframe, img {
+	display:block;
+	width:480px;
+	height:300px;
+	margin:auto;}
+#logo { 
+	margin:auto;
+	font-family: font1 ,Arial,sans-serif;
+	text-transform:uppercase;
+	font-size:80px;
+	text-align:center;
+	font-weight:900;
+	color:white;
+}
+
+
+#technologie img{
+	width:300px;
+	height:auto;
+	border-radius: 25px 25px 25px 25px;
+}
+#technologie div{
+	width:320px;
+	float:left;
+	padding:10px;
+	box-sizing:border-box;
+		}
+#kontakt  p {
+	text-align:right;
+	font-family: font1 ,Arial,sans-serif;
+	font-size: 30px;
+	text-transform: uppercase;
+}
+#kontakt iframe{
+	float:left;
+}
+	
+footer{
+	color:indianred;
+	font-family: Arial;
+	font-weight: 400;
+	clear:both;
+}
+
+.mainpic {
+	width: 640px;
+	height: auto;
+	display: block;
+	border-radius: 100px;
+}
+#certyfikaty {
+	text-align:center;
+}
+
+#certyfikaty img {
+	width:150px;
+	height:auto;
+	display:inline;
+	border-radius: 15px 15px 15px 15px;
+	margin:auto;
+}
+#kontakt img {
+	width:50px;
+	height:auto;
+	display:inline;
+	margin:auto;
+	padding:5px;
+	border-radius: 12px 12px 12px 12px;
+	float:right;
+
+}
+h2 {
+	text-align: center;
+	font-size:40px;
+}
+#certyfikaty #f1{width:600px;
+	height:auto;
+	display:block;
+	margin:auto;
+	border-radius: 50px 50px 50px 50px;
+	padding-bottom: 10px;
+	}
+
+@media only screen and (max-width : 600px ){
+body{
+	background-image:url(../Grafiki/Background.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-attachment:fixed;
+	color:white;
+}
+	.buttonr{
+		right:40%;
+	}
+	.buttonl{
+		left:40%;
+	}
+	section, header {
+		width:330px;
+	}
+	.mainpic{
+	width:213px;
+	height:auto;
+	display:block;
+	border-radius: 33px;
+}
+	#certyfikaty img {
+	width: 213px;
+	height: auto;
+	display: block;
+	border-radius: 20px 20px 20px 20px;
+	margin:auto;
+}
+h2 {
+	text-align: center;
+}
+#certyfikaty #f1{width:200px;
+	height: auto;
+	margin: auto;
+	border-radius: 17px 17px 17px 17px;
+	padding-bottom: 3px;
+	display: none;
+	}
+	
+	iframe, img {
+	display:block;
+	width:160px;
+	height:100px;
+	margin:auto;}
+	#technologie img{
+	width:100px;
+	height:auto;
+	border-radius: 8px 8px 8px 8px;
+}
+	p, footer{
+		font-size:12px;
+	}
+	#kontakt p{
+		font-size:9px;
+	}
+	#logo{
+		font-size: 30px;
+	}
+	nav li{
+		font-size: 20px;
+		text-align: center;
+		display: block;
+		padding: 8px;
+	}
+	#kontakt img{
+		width:20px;
+		height:auto;
+		padding:3px;
+		border-radius: 5px 5px 5px 5px;
+	}
+	h2{
+		font-size:20px;
+	}
+	h1{
+		font-size:18px;
+	}
+	#kontakt p{
+		font-size:16px;
+	}
+} 
+@media only screen and (min-width: 600px) and (max-width: 992px){
+	section, header {
+		width:640px;
+	}
+	.mainpic{
+	width:416px;
+	height:auto;
+	display:block;
+	border-radius: 66px;
+}
+	#certyfikaty img {
+	width:100px;
+	height:auto;
+	display:inline;
+	border-radius: 10px 10px 10px 10px;
+	margin:auto;
+}
+h2 {
+	text-align: center;
+}
+#certyfikaty #f1{width:400px;
+	height:auto;
+	display:block;
+	margin:auto;
+	border-radius: 34px 34px 34px 34px;
+	padding-bottom: 6px;
+	}
+	iframe, img {
+	display:block;
+	width:320px;
+	height:200px;
+	margin:auto;}
+	#technologie img{
+	width:200px;
+	height:auto;
+	border-radius: 16px 16px 16px 16px;
+}
+	#kontakt p{
+		font-size:18px;
+	}
+	#logo{
+		font-size: 60px;
+	}
+	nav li{
+		font-size:30px;
+		padding:16px;
+	}
+	#kontakt img{
+		width:40px;
+		height:auto;
+		padding:6px;
+		border-radius: 10px 10px 10px 10px;
+	}
+	h2{
+		font-size:30px;
+	}
+	h1{
+		font-size:24px;
+	}
+	#technologie div {
+	float:none;
+	width:640px;
+	}
+	#certyfikaty{
+		clear:both;
+	}
+}

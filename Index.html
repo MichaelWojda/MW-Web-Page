@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Michał Wojda Software Developer</title>
+<link rel="stylesheet" type="text/css" href="style1a.css">
+<script src="jQueryAssets/jquery-1.11.1.min.js"></script>
+<script src="jQueryAssets/jquery-ui-effects.custom.min.js"></script>
+<script type="text/javascript">
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+    showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mainpic");
+    if (n > x.length) {slideIndex = 1} 
+    if (n < 1) {slideIndex = x.length} ;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none"; 
+    }
+    x[slideIndex-1].style.display = "block"; 
+}	
+</script>
+</head>
+<body>
+<div id="fb-root"></div>
+<article>
+	<p id="logo">&lt;/mwd&gt;</p>
+	<nav>
+		<ul>
+			<li><a href="#omnie">O mnie</a></li>
+			<li><a href="#technologie">Technologie</a></li>
+			<li><a href="#f1">Certyfikaty</a></li>
+			<li><a href="#kontakt">Kontakt</a></li>
+			<li><a href="#media">Media</a></li>
+		</ul>
+	</nav>
+	<header onClick="MM_DW_effectSlide($('#f1'),'show','slide','left',20,1000)">
+		<img src="../Grafiki/apple-black-and-white-camera-6600.jpg" class="mainpic">
+		<img src="../Grafiki/laptop-600x400.jpg" class="mainpic" id="p1">
+		<img src="../Grafiki/mac.jpg" class="mainpic" id="p2">
+		<button class="buttonl" onclick="plusDivs(-1)">&#10094;</button>
+		<button class="buttonr" onclick="plusDivs(+1)">&#10095;</button>
+	</header>
+	<section id="omnie"><h2><a href="#logo">O mnie</a></h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus. Phasellus pharetra nulla ac diam. Quisque semper justo at risus. Donec venenatis, turpis vel hendrerit interdum, dui ligula ultricies purus, sed posuere libero dui id orci. Nam congue, pede vitae dapibus aliquet, elit magna vulputate arcu, vel tempus metus leo non est. Etiam sit amet lectus quis est congue mollis. Phasellus congue lacus eget neque. Phasellus ornare, ante vitae consectetuer consequat, purus sapien ultricies dolor, et mollis pede metus eget nisi. Praesent sodales velit quis augue. Cras suscipit, urna at aliquam rhoncus, urna quam viverra nisi, in interdum massa nibh nec erat.</p>
+	</section>
+	<section id="technologie"><h2><a href="#logo">Technologie</a></h2>
+	<div>
+		<h1><a href="https://pl.wikipedia.org/wiki/Java" target="_blank">Java</a></h1>
+		<img src="../Grafiki/java (1).png" class="obraz">
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus. Phasellus pharetra nulla ac diam. Quisque semper justo at risus. Donec venenatis, turpis vel hendrerit interdum, dui ligula ultricies purus, sed posuere libero dui id orci. Nam congue, pede vitae dapibus aliquet, elit magna vulputate arcu, vel tempus metus leo non est. Etiam sit amet lectus quis est congue mollis. Phasellus congue lacus eget neque. Phasellus ornare, ante vitae consectetuer consequat, purus sapien ultricies dolor, et mollis pede metus eget nisi. Praesent sodales velit quis augue. Cras suscipit, urna at aliquam rhoncus, urna quam viverra nisi, in interdum massa nibh nec erat.</p>
+	</div>
+		<div>
+		<h1><a href="https://pl.wikipedia.org/wiki/HTML5" target="_blank">HTML/CSS</a></h1>
+		<img src= "../Grafiki/html.png" class="obraz">
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus. Phasellus pharetra nulla ac diam. Quisque semper justo at risus. Donec venenatis, turpis vel hendrerit interdum, dui ligula ultricies purus, sed posuere libero dui id orci. Nam congue, pede vitae dapibus aliquet, elit magna vulputate arcu, vel tempus metus leo non est. Etiam sit amet lectus quis est congue mollis. Phasellus congue lacus eget neque. Phasellus ornare, ante vitae consectetuer consequat, purus sapien ultricies dolor, et mollis pede metus eget nisi. Praesent sodales velit quis augue. Cras suscipit, urna at aliquam rhoncus, urna quam viverra nisi, in interdum massa nibh nec erat.</p>
+	</div>
+	<div>
+		<h1><a href="https://pl.wikipedia.org/wiki/C_Sharp" target="_blank">C#</a></h1>
+		<img src= "../Grafiki/hashtag.png" class="obraz">
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus. Phasellus pharetra nulla ac diam. Quisque semper justo at risus. Donec venenatis, turpis vel hendrerit interdum, dui ligula ultricies purus, sed posuere libero dui id orci. Nam congue, pede vitae dapibus aliquet, elit magna vulputate arcu, vel tempus metus leo non est. Etiam sit amet lectus quis est congue mollis. Phasellus congue lacus eget neque. Phasellus ornare, ante vitae consectetuer consequat, purus sapien ultricies dolor, et mollis pede metus eget nisi. Praesent sodales velit quis augue. Cras suscipit, urna at aliquam rhoncus, urna quam viverra nisi, in interdum massa nibh nec erat.</p>
+	</div>
+	</section>
+	
+  <section id="certyfikaty"><h2><a href="#logo">Certyfikaty</a></h2>
+	<img id="f1" src="../Grafiki/Blank-Excellence-Certificate-Of-Completion.jpg">
+	<img src="../Grafiki/Blank-Excellence-Certificate-Of-Completion.jpg" id="Image1" onClick="MM_swapImage('f1','','../Grafiki/Blank-Excellence-Certificate-Of-Completion.jpg',0)">
+	<img src="../Grafiki/depositphotos_23936179-stock-illustration-certificate.jpg" onClick="MM_swapImage('f1','','../Grafiki/depositphotos_23936179-stock-illustration-certificate.jpg',0)">
+	<img src="../Grafiki/empty-certificate-template.jpg" onClick="MM_swapImage('f1','','../Grafiki/empty-certificate-template.jpg',0)">
+	<img src="../Grafiki/no-translate-detected_1262-2535.jpg" onClick="MM_swapImage('f1','','../Grafiki/no-translate-detected_1262-2535.jpg',0)">
+	</section>
+	<section id="media"><h2><a href="#logo">Media</a></h2>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/BP1UTQXoAsk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	</section>
+	<section id="kontakt"><h2><a href="#logo">Kontakt</a></h2>
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2466.524370104375!2d19.311186250792566!3d51.814850879587055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471bb496faf23f8b%3A0x828cac647ec2dafa!2sSikorskiego+1%2C+95-069+Aleksandr%C3%B3w+%C5%81%C3%B3dzki!5e0!3m2!1spl!2spl!4v1526330896898" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+	<p>Kontakt:</p>
+	<p><a href="mailto:michaelwojda@gmail.com">michaelwojda@gmail.com</a></p>
+	<p>Tel: +48888888888</p>
+	<a href="https://www.facebook.com" target="_blank"><img src="../Grafiki/facebook.png" ></a><a href="https://www.instagram.com" target="_blank"><img src="../Grafiki/instagram.png" ></a>
+	</section>
+</article>
+
+<footer>Michał Wojda ©2018</footer>
+</body>
+</html>
